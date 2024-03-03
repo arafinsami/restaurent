@@ -1,0 +1,9 @@
+<div>
+    <h2>User Management</h2>
+    
+    <label for="sessionId">Enter Session ID:</label>
+    <input type="text" id="sessionId" [(ngModel)]="sessionId" placeholder="Enter session ID...">
+    
+    <button (click)="joinSession()" [disabled]="!sessionId">Join Session</button>
+    <button (click)="leaveSession()" [disabled]="!sessionId">Leave Session</button>
+  </div>

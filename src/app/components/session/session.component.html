@@ -1,0 +1,16 @@
+<div>
+    <h2>Session Management</h2>
+    
+    <button (click)="createSession()">Create Session</button>
+    
+    <hr>
+    
+    <div *ngIf="!sessionId">
+      <label for="sessionId">Enter Session ID:</label>
+      <input type="text" id="sessionId" [(ngModel)]="sessionId" placeholder="Enter session ID...">
+    </div>
+    
+    <div *ngIf="sessionId">
+      <button (click)="endSession()">End Session</button>
+    </div>
+  </div>

@@ -1,0 +1,8 @@
+<div>
+    <h2>Submit Restaurant</h2>
+    
+    <label for="restaurantName">Restaurant Name:</label>
+    <input type="text" id="restaurantName" [(ngModel)]="restaurantName" placeholder="Enter restaurant name...">
+    
+    <button (click)="submitRestaurant()" [disabled]="!restaurantName">Submit</button>
+  </div>
